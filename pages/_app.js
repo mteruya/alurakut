@@ -1,16 +1,33 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  /** reset CSS **/
+  * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }  
+
   body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color:#D9E6f6;
   }
+  #_next{
+    display:flex;
+    min-height:100vh;
+    felx-direction: column;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
 `
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: 'red',
   },
 }
 
